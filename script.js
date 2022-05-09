@@ -3,17 +3,18 @@
 function calculateSalary(fixo, vendas) {
     let salarioTotal = 0
     let dif = vendas - 1200
+    
 
     if (dif <= 0) {
         salarioTotal = fixo + (0.03 * vendas)
     }
     else {
-        salarioTotal = fixo + (0.03 * vendas) + (dif * 0.05)
+        salarioTotal = fixo + (0.03 * 1200) + (dif * 0.05)
 
     }
     return salarioTotal
 }
-console.log(calculateSalary(2000, 4000))
+console.log(calculateSalary(1000, 1400))
 
 //cashMachine()
 
